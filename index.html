@@ -7,28 +7,38 @@
   <style>
     body {
       margin: 0;
+      min-height: 100vh;
       font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(180deg, #fff7f1, #eef7ff);
+      background:
+        radial-gradient(circle at top left, #ffe8f2 0, transparent 26%),
+        radial-gradient(circle at top right, #fff0d2 0, transparent 24%),
+        linear-gradient(180deg, #fff7f1, #eef7ff);
       color: #2d211c;
     }
     main {
-      max-width: 840px;
+      max-width: 860px;
       margin: 0 auto;
-      padding: 30px 18px 60px;
+      padding: 32px 18px 60px;
+    }
+    .panel {
+      background: rgba(255,255,255,0.88);
+      border: 1px solid rgba(145,110,92,0.25);
+      border-radius: 28px;
+      padding: 24px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
     }
     h1 {
       margin: 0 0 12px;
-      font-size: 42px;
+      font-size: 40px;
     }
     p {
-      margin: 0 0 18px;
+      margin: 0 0 20px;
       font-size: 20px;
       line-height: 1.6;
+      color: #7f5648;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    .links {
       display: grid;
       gap: 12px;
     }
@@ -40,217 +50,25 @@
       color: inherit;
       background: rgba(255,255,255,0.8);
       border: 1px solid rgba(145,110,92,0.25);
+      font-size: 22px;
+      font-weight: 700;
     }
-    span {
-      display: block;
-      margin-top: 8px;
-      color: #7f5648;
-      font-size: 15px;
+    a:hover {
+      background: rgba(255,255,255,0.95);
     }
   </style>
 </head>
 <body>
   <main>
-    <h1>Taeheon JLPT</h1>
-    <p>정답 이미지와 베트남어 해설 페이지 모음입니다.</p>
-    <ul><li><a href="/jp/jp-r002.html">わたしは 学生（ ）。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r003.html">ドアが（ ）います。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r004.html">彼の言葉には（ ）がある。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r005.html">これ（ ）わたしの ほんです。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r006.html">先生に 本を（ ）。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r007.html">景気の回復に（ ）、株価も上昇した。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r008.html">きのう、デパート（ ）いきました。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r009.html">あした雨が（ ）、ピクニックに行きません。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r010.html">そんなこと、言わ（ ）わかるだろう。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r011.html">今朝(けさ)、あさごはんを（ ）か。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r012.html">私は漢字を書くこと（ ）できます。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r013.html">彼は経験が（ ）わりに、よくやっている。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r014.html">あの人は（ ）ですか。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r015.html">このケーキは（ ）すぎます。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r016.html">あの人はお金に（ ）だ。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r017.html">コーヒーを（ ）たいです。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r018.html">あの人はお金持ち（ ）です。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r019.html">この計画は失敗する（ ）が高い。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r020.html">いま 午後(ごご) ３（ ）ですか。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r021.html">友達が私にプレゼントを（ ）。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r022.html">彼の努力は賞賛に（ ）。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r023.html">わたしの かぞくは ４（ ）です。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r024.html">かぜを（ ）ので、学校を休みます。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r025.html">突然の雨に（ ）、試合は中止となった。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r026.html">この りんごは ひとつ（ ）ですか。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r027.html">電車に（ ）としたとき、ドアが閉まりました。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r028.html">彼は疲労の（ ）、倒れてしまった。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r029.html">暑(あつ)いから、まどを（ ）ください。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r030.html">部屋を（ ）しておいてください。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r031.html">この仕事は、私（ ）は荷が重い。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r032.html">えきまで（ ）で いきます。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r033.html">彼は日本語が話せる（ ）なりました。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r034.html">彼女の態度は、誰の目にも（ ）だった。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r035.html">としょかんで ほんを（ ）。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r036.html">宿題を（ ）なければなりません。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r037.html">この問題は、解決が（ ）される。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r038.html">つくえの（ ）に ペンが あります。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r039.html">この料理の（ ）方を教えてください。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r040.html">この制度は、現状に（ ）いない。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r041.html">来週(らいしゅう)、わたしは 日本へ（ ）。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r042.html">私は毎日運動する（ ）しています。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r043.html">彼の意見は考慮する（ ）がある。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r044.html">空(そら)が 暗(くら)いから、あしたは（ ）が 降(ふ)るでしょう。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r045.html">今、雨が降って（ ）ところです。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r046.html">彼女は涙（ ）にその出来事を語った。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r047.html">やすみは 日曜日（ ）月曜日です。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r048.html">先生は学生に漢字を（ ）。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r049.html">この商品は若者を（ ）に開発された。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r050.html">昨日(きのう)、友達(ともだち)と映画(えいが)を（ ）。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r051.html">薬を飲んだ（ ）、熱が下がりません。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r052.html">彼は経験が浅い（ ）、プロジェクトのリーダーに抜擢された。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r053.html">今(いま)、机(つくえ)の上(うえ)に本(ほん)（ ）あります。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r054.html">明日テストがあるので、今日は早く寝る（ ）にしています。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r055.html">悪天候（ ）、本日の試合は中止とさせていただきます。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r056.html">毎日(まいにち)、バス（ ）学校(がっこう)へ行(い)きます。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r057.html">先生に私の作文を直して（ ）。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r058.html">彼の態度があまりにも失礼で、怒りを禁じ（ ）。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r059.html">今朝(けさ)、パンを食(た)べ（ ）。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r060.html">部屋が暗いなら、電気を（ ）いいですよ。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r061.html">環境問題は、もはや国境を（ ）地球規模の課題である。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r062.html">私(わたし)の趣味(しゅみ)は音楽(おんがく)を聞(き)く（ ）です。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r063.html">どんなに難しく（ ）、最後まで頑張ります。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r064.html">社長の方針（ ）、新しいプロジェクトが始動した。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r065.html">先週(せんしゅう)の日曜日(にちようび)はとても（ ）です。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r066.html">ドアの鍵を（ ）まま、外出してしまった。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r067.html">彼は一流の音楽家である（ ）、優れた教育者でもある。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r068.html">今(いま)、部屋(へや)に猫(ねこ)が（ ）。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r069.html">顔色が悪いですね。疲れている（ ）、少し休んだほうがいいですよ。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r070.html">住民の強い反対（ ）、その建物の建設が強行された。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r071.html">明日(あした)は雨(あめ)が（ ）。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r072.html">説明書に書いてある（ ）組み立ててください。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r073.html">この仕事は、豊富な経験と知識があっ（ ）のことだ。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r074.html">毎晩(まいばん)、何時(なんじ)に（ ）か。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r075.html">あの店は美味しい（ ）、値段も安いので人気がある。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r076.html">彼は自分のミスを認める（ ）、他人のせいにした。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r077.html">来年(らいねん)、日本(にほん)へ（ ）つもりです。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r078.html">忙しすぎて、昼ごはんを食べる時間（ ）ありません。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r079.html">一度引き受けた（ ）、最後まで責任を持ってやり遂げたい。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r080.html">昨日(きのう)、私(わたし)は りんごを ３つ(みっつ) ( ___ )。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r081.html">事故があった( ___ )、電車が遅れている。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r082.html">彼の無責任な発言は、到底看過できる( ___ )。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r083.html">机(つくえ)の 上(うえ)に 本(ほん)が ( ___ )。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r084.html">先生に名前を( ___ )時、大きな声で返事をしました。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r085.html">お客様( ___ )私たちの会社ですから、常に感謝を忘れてはいけません。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r086.html">毎日(まいにち) バス(ばす) ( ___ ) 学校(がっこう)へ 行きます(いきます)。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r087.html">明日の会議は、朝9時から始まる( ___ )になっています。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r088.html">どんなに困難な状況であれ、最後まで諦めない( ___ )だ。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r089.html">あしたは 映画(えいが)を 見(み)に 行く(いく) ( ___ )です。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r090.html">彼はまるで本当の家族で( ___ )かのように、私に親切にしてくれた。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r091.html">一旦引き受けたから( ___ )、最後まで責任を持ってやり遂げる覚悟だ。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r092.html">今(いま) 食べて(たべて)いる カレー(かれー)は とても ( ___ )です。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r093.html">もう少しで車にぶつかる( ___ )だったが、間一髪で助かった。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r094.html">社長からの直接の命令と( ___ )、従わざるを得ない。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r095.html">私(わたし)の 部屋(へや)は 2階(にかい)に ( ___ )。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r096.html">どんなに疲れて( ___ )、毎日の復習は欠かさない。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r097.html">彼の才能は天才的で、凡人の想像を絶する( ___ )。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r098.html">毎朝(まいあさ) 7時(しちじ)に ( ___ )。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r099.html">窓を開けた( ___ )、冷たい風が入ってきた。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r100.html">この程度のミスで落ち込むなんて、君( ___ )ね。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r101.html">兄(あに)は ギター(ぎたー)を 弾く(ひく) ( ___ )が 上手(じょうず)です。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r102.html">部屋が暗いので、もっと電気が明るい( ___ )に替えてください。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r103.html">あの悲惨な事故のニュースを聞いて、涙を( ___ )。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r104.html">これから 図書館(としょかん)へ 本(ほん)を ( ___ )に 行きます(いきます)。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r105.html">彼は何も知らない( ___ )をして、私の話を聞いていた。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r106.html">この仕事は危険を( ___ )ため、十分な安全対策が必要だ。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r107.html">今(いま)、雨(あめ)が ( ___ ) います。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r108.html">いくら探しても見つからないので、新しく買う( ___ )。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r109.html">彼のスピーチは、多くの人々に感動を( ___ )。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r110.html">きのう、りんごを＿＿＿。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r111.html">この本は＿＿＿すぎる。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r112.html">住民の反対を＿＿＿、建設が強行された。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r113.html">つくえの上に本＿＿＿あります。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r114.html">窓が＿＿＿ままになっている。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r115.html">優勝できたのは、チーム全員の努力の＿＿＿。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r116.html">あした、友だち(ともだち)とえいがを＿＿＿。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r117.html">先生に＿＿＿通りにやってみてください。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r118.html">どんなに苦しく＿＿＿、最後までやり抜く。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r119.html">わたしは日本(にほん)＿＿＿来ました(きました)。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r120.html">疲れている＿＿＿、早く寝なさい。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r121.html">経験の有無を＿＿＿、誰でも参加できます。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r122.html">部屋(へや)の中(なか)にだれ＿＿＿いません。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r123.html">試験に合格する＿＿＿、毎日勉強している。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r124.html">彼の無礼な態度は、怒りを＿＿＿にはいられない。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r125.html">コーヒーと紅茶(こうちゃ)、＿＿＿がいいですか。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r126.html">彼は病気の＿＿＿、学校を休んだ。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r127.html">このシステムは、安全性に＿＿＿がある。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r128.html">毎朝(まいあさ)７時(じ)＿＿＿起きます(おきます)。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r129.html">あの人はまるで日本人である＿＿＿日本語を話す。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r130.html">彼の努力には、ただ感心する＿＿＿。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r131.html">わたしはカメラ＿＿＿ほしいです。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r132.html">薬を飲んだ＿＿＿、熱が下がらない。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r133.html">彼は仕事への責任感が強く、社長からの信頼も＿＿＿。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r134.html">ここに名前(なまえ)を＿＿＿ください。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r135.html">テレビを＿＿＿まま寝てしまった。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r136.html">そんな理不尽な要求は、到底受け入れ＿＿＿。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r137.html">今(いま)、雨(あめ)が＿＿＿います。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r138.html">どんなに難しくても、最後まで頑張る＿＿＿だ。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r139.html">昨日の会議は、時間の無駄であったと言わざるを＿＿＿。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r140.html">きのう、りんごを＿＿＿。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r141.html">この本は＿＿＿すぎる。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r142.html">住民の反対を＿＿＿、建設が強行された。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r143.html">つくえの上に本＿＿＿あります。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r144.html">窓が＿＿＿ままになっている。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r145.html">優勝できたのは、チーム全員の努力の＿＿＿。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r146.html">あした、友だち(ともだち)とえいがを＿＿＿。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r147.html">先生に＿＿＿通りにやってみてください。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r148.html">どんなに苦しく＿＿＿、最後までやり抜く。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r149.html">わたしは日本(にほん)＿＿＿来ました(きました)。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r150.html">疲れている＿＿＿、早く寝なさい。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r151.html">経験の有無を＿＿＿、誰でも参加できます。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r152.html">部屋(へや)の中(なか)にだれ＿＿＿いません。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r153.html">試験に合格する＿＿＿、毎日勉強している。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r154.html">彼の無礼な態度は、怒りを＿＿＿にはいられない。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r155.html">コーヒーと紅茶(こうちゃ)、＿＿＿がいいですか。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r156.html">彼は病気の＿＿＿、学校を休んだ。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r157.html">このシステムは、安全性に＿＿＿がある。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r158.html">毎朝(まいあさ)７時(じ)＿＿＿起きます(おきます)。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r159.html">あの人はまるで日本人である＿＿＿日本語を話す。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r160.html">彼の努力には、ただ感心する＿＿＿。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r161.html">わたしはカメラ＿＿＿ほしいです。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r162.html">薬を飲んだ＿＿＿、熱が下がらない。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r163.html">彼は仕事への責任感が強く、社長からの信頼も＿＿＿。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r164.html">ここに名前(なまえ)を＿＿＿ください。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r165.html">テレビを＿＿＿まま寝てしまった。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r166.html">そんな理不尽な要求は、到底受け入れ＿＿＿。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r167.html">今(いま)、雨(あめ)が＿＿＿います。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r168.html">どんなに難しくても、最後まで頑張る＿＿＿だ。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r169.html">昨日の会議は、時間の無駄であったと言わざるを＿＿＿。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r170.html">きのう、私(わたし)は本(ほん)（ ）読みました(よみました)。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r171.html">明日は試験があるので、今夜は早く（ ）いけません。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r172.html">住民の協力を（ ）、このダムの建設は進められないだろう。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r173.html">あした、学校(がっこう)へ（ ）前に(まえに)、朝(あさ)ごはんを 食べます(たべます)。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r174.html">昨日は大雨が降っていた（ ）、試合は予定通り行われた。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r175.html">どんなに批判されよう（ ）、彼は自分の信念を曲げなかった。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r176.html">先週(せんしゅう)の 日曜日(にちようび)は とても（ ）。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r177.html">もし宝くじで1億円（ ）、世界一周旅行に行きたい。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r178.html">社長たる（ ）、社員の模範となる行動をとるべきだ。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r179.html">机(つくえ)の 上(うえ)に りんごが ３（ ） あります。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r180.html">彼は何でも知っている（ ）をして、話し続けている。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r181.html">環境問題は、もはや国境を（ ）地球規模の課題となっている。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r182.html">きのう、スーパーで 肉(にく)（ ）野菜(やさい)を 買いました(かいました)。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r183.html">このパソコンは、使いやすい（ ）、値段も安いので人気がある。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r184.html">あの政治家の発言は、国民の怒りを（ ）にはいられないものだった。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r185.html">毎日(まいにち)、夜(よる) １１時(じゅういちじ)（ ） 寝ます(ねます)。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r186.html">先生の丁寧な指導の（ ）、無事に試験に合格できた。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r187.html">どんな困難があろう（ ）、最後まで諦めずにやり遂げる覚悟だ。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r188.html">今(いま)、雨(あめ)が（ ） います。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r189.html">宿題を（ ）としたとき、突然友達が遊びに来た。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r190.html">彼の残酷な行為は、見る（ ）。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r191.html">これから 友達(ともだち)と 映画(えいが)を（ ） 行きます(いきます)。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r192.html">約束の時間を過ぎても、彼は一向に来る（ ）がない。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r193.html">担当者に（ ）、今回のトラブルの原因はシステムのエラーだ。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r194.html">部屋(へや)の 窓(まど)が（ ） あります。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r195.html">説明書に書いてある（ ）に組み立てたら、簡単に完成した。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r196.html">この計画を成功させるには、皆さんの協力ある（ ）です。 <span>上級(JLPT N1~2)</span></a></li>
-<li><a href="/jp/jp-r197.html">毎朝(まいあさ) コーヒーを（ ）ながら、新聞(しんぶん)を読みます。 <span>初級(JLPT N5)</span></a></li>
-<li><a href="/jp/jp-r198.html">どんなに疲れて（ ）、お風呂に入らずに寝ることはありません。 <span>中級(JLPT N3~4)</span></a></li>
-<li><a href="/jp/jp-r199.html">優勝の瞬間、彼は嬉しさの（ ）、涙を流して喜んだ。 <span>上級(JLPT N1~2)</span></a></li></ul>
+    <section class="panel">
+      <h1>Theo dõi thêm các trang học ngoại ngữ</h1>
+      <p>Học thêm ngoại ngữ cùng Taeheon qua các trang dưới đây.</p>
+      <div class="links">
+        <a href="https://www.facebook.com/profile.php?id=61586235293439" target="_blank" rel="noopener noreferrer">Trang tiếng Nhật</a>
+        <a href="https://www.facebook.com/profile.php?id=61586607184818" target="_blank" rel="noopener noreferrer">Trang tiếng Anh</a>
+        <a href="https://www.facebook.com/profile.php?id=61588604086377" target="_blank" rel="noopener noreferrer">Trang tiếng Hàn</a>
+      </div>
+    </section>
   </main>
 </body>
 </html>
