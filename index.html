@@ -3,8 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Taeheon JLPT</title>
+  <title>Taeheon Language Study Hub</title>
+  <meta name="description" content="Trang học ngoại ngữ của Taeheon với nội dung JLPT, tiếng Anh và TOPIK. Xem đáp án, lời giải, ghi chú học tập và liên kết đến các trang học chính thức.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Taeheon Language Study Hub">
+  <meta property="og:description" content="Tổng hợp nội dung học tiếng Nhật, tiếng Anh và tiếng Hàn cùng Taeheon.">
+  <meta property="og:url" content="https://taeheon.pages.dev/">
+  <meta property="og:site_name" content="Taeheon Language Study Hub">
   <style>
+    :root {
+      --ink: #2d211c;
+      --muted: #6f5c54;
+      --accent: #8f6254;
+      --line: rgba(145,110,92,0.22);
+      --panel: rgba(255,255,255,0.9);
+      --card: rgba(255,255,255,0.72);
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       min-height: 100vh;
@@ -13,61 +28,175 @@
         radial-gradient(circle at top left, #ffe8f2 0, transparent 26%),
         radial-gradient(circle at top right, #fff0d2 0, transparent 24%),
         linear-gradient(180deg, #fff7f1, #eef7ff);
-      color: #2d211c;
+      color: var(--ink);
     }
     main {
-      max-width: 860px;
+      max-width: 980px;
       margin: 0 auto;
-      padding: 32px 18px 60px;
+      padding: 28px 18px 60px;
     }
-    .panel {
-      background: rgba(255,255,255,0.88);
-      border: 1px solid rgba(145,110,92,0.25);
+    .hero,
+    .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
       border-radius: 28px;
-      padding: 24px;
-      backdrop-filter: blur(6px);
+      padding: 28px;
       box-shadow: 0 12px 30px rgba(0,0,0,0.06);
     }
+    .hero {
+      margin-bottom: 18px;
+    }
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
     h1 {
+      margin: 0 0 14px;
+      font-size: 42px;
+      line-height: 1.15;
+    }
+    .lead {
+      margin: 0;
+      font-size: 19px;
+      line-height: 1.7;
+      color: #473730;
+    }
+    .grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 20px;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      color: var(--accent);
+    }
+    .card p {
+      margin: 0;
+      color: #54453e;
+      line-height: 1.7;
+    }
+    .section {
+      margin-top: 18px;
+    }
+    .section h2 {
       margin: 0 0 12px;
-      font-size: 40px;
+      font-size: 26px;
+      color: var(--accent);
     }
-    p {
-      margin: 0 0 20px;
-      font-size: 20px;
-      line-height: 1.6;
-      color: #7f5648;
+    .section p {
+      margin: 0 0 12px;
+      line-height: 1.8;
+      color: #4b3d37;
     }
-    .links {
+    .bullet-list {
       display: grid;
       gap: 12px;
     }
-    a {
+    .bullet {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
+    .bullet strong {
       display: block;
-      padding: 18px 20px;
-      border-radius: 20px;
+      margin-bottom: 6px;
+      color: #3b2a24;
+    }
+    .promo-links {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .promo-links a {
+      display: block;
+      padding: 16px 18px;
+      border-radius: 18px;
       text-decoration: none;
-      color: inherit;
-      background: rgba(255,255,255,0.8);
-      border: 1px solid rgba(145,110,92,0.25);
-      font-size: 22px;
+      color: #2d211c;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(145,110,92,0.28);
       font-weight: 700;
     }
-    a:hover {
-      background: rgba(255,255,255,0.95);
+    .muted {
+      font-size: 15px;
+      color: var(--muted);
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 34px; }
+      .hero, .section { padding: 22px; }
+      .lead { font-size: 17px; }
     }
   </style>
 </head>
 <body>
   <main>
-    <section class="panel">
-      <h1>Theo dõi thêm các trang học ngoại ngữ</h1>
-      <p>Học thêm ngoại ngữ cùng Taeheon qua các trang dưới đây.</p>
-      <div class="links">
+    <section class="hero">
+      <div class="eyebrow">Taeheon Language Study Hub</div>
+      <h1>Học ngoại ngữ cùng Taeheon</h1>
+      <p class="lead">Đây là trang tổng hợp nội dung học tiếng Nhật, tiếng Anh và tiếng Hàn. Mỗi bài giải thích được đăng để giúp người học xem lại đáp án, hiểu lý do đúng sai, ghi nhớ ngữ pháp quan trọng và tiếp tục luyện tập qua các trang học chính thức.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Tiếng Nhật</h3>
+          <p>Nội dung JLPT theo cấp độ, giải thích đáp án bằng tiếng Việt, ví dụ ngắn gọn và liên kết đến trang học chính.</p>
+        </div>
+        <div class="card">
+          <h3>Tiếng Anh</h3>
+          <p>Bài tập ngữ pháp và từ vựng được giải thích rõ bằng tiếng Việt để người học hiểu vì sao đáp án đúng và vì sao các lựa chọn khác sai.</p>
+        </div>
+        <div class="card">
+          <h3>Tiếng Hàn</h3>
+          <p>Nội dung TOPIK và bài viết luyện viết với bài mẫu, tiêu chí chấm và trang giải thích chi tiết cho từng câu hỏi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Trang này dùng để làm gì?</h2>
+      <div class="bullet-list">
+        <div class="bullet">
+          <strong>Xem đáp án và lời giải</strong>
+          Sau khi làm bài trên Facebook, người học có thể mở trang này để xem đáp án đúng, đọc lời giải bằng tiếng Việt và ôn lại nội dung quan trọng.
+        </div>
+        <div class="bullet">
+          <strong>Hỗ trợ học tập có hệ thống</strong>
+          Mỗi trang giải thích được tạo để phục vụ việc học, không phải chỉ để đặt quảng cáo. Nội dung tập trung vào ngữ pháp, từ vựng, cấu trúc câu và cách tránh lỗi thường gặp.
+        </div>
+        <div class="bullet">
+          <strong>Kết nối với các trang học chính thức</strong>
+          Người học có thể quay lại các trang Facebook chính để xem bài mới, luyện thêm và theo dõi nội dung cập nhật hằng ngày.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Nội dung bạn có thể tìm thấy</h2>
+      <p>Trang web này bao gồm các bài giải thích cho câu hỏi trắc nghiệm ngắn, bài luyện viết, đáp án mẫu, phân tích lỗi sai và hướng dẫn học tập cơ bản. Mỗi trang được thiết kế cho người học muốn xem nhanh đáp án nhưng vẫn có đủ văn bản để đọc hiểu nội dung.</p>
+      <p class="muted">Nếu bạn đang tìm bài mới nhất, hãy theo dõi trực tiếp các trang Facebook chính thức ở bên dưới.</p>
+      <div class="promo-links">
         <a href="https://www.facebook.com/profile.php?id=61586235293439" target="_blank" rel="noopener noreferrer">Trang tiếng Nhật</a>
         <a href="https://www.facebook.com/profile.php?id=61586607184818" target="_blank" rel="noopener noreferrer">Trang tiếng Anh</a>
         <a href="https://www.facebook.com/profile.php?id=61588604086377" target="_blank" rel="noopener noreferrer">Trang tiếng Hàn</a>
       </div>
+    </section>
+
+    <section class="section">
+      <h2>Lưu ý về nội dung</h2>
+      <p>Các trang trong website này được dùng để hỗ trợ học tập và xem lời giải. Nội dung có thể được cập nhật hoặc bổ sung để người học hiểu rõ hơn về đáp án, ví dụ minh họa và sự khác biệt giữa các lựa chọn.</p>
+      <p>Mục tiêu của website là cung cấp môi trường đọc hiểu tốt hơn cho người học so với việc chỉ xem đáp án ngắn trong bài đăng mạng xã hội.</p>
     </section>
   </main>
 </body>

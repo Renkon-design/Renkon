@@ -1,2 +1,0 @@
-# Renkon
-Language explanation pages
